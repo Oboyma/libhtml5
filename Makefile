@@ -4,7 +4,7 @@ prefix = /usr
 cc = gcc
 
 obj = html5.o
-ccflags = -c -O2 -I./include/ -std=c99 -Wall -Wextra -pedantic -fPIC
+ccflags = -c -O2 -I./include/ -std=c11 -Wall -Wextra -pedantic -fPIC
 ldflags = -shared
 lname = -o libhtml5.so
 
@@ -21,4 +21,3 @@ html5.o: html5.c
 clean:
 	@rm -f *.o
 	@rm -f libhtml5.so
-	
